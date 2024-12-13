@@ -1,0 +1,169 @@
+/* Contenitore principale */
+/* Contenitore principale */
+.novità-container {
+    background-color: #121212;
+    color: white;
+    padding: 3em 2em; /* Valore di fallback per piccoli schermi */
+    font-family: Arial, sans-serif;
+    width: 100%; /* Adatta la larghezza per dispositivi diversi */
+    box-sizing: border-box; /* Include padding nel calcolo della larghezza */
+}
+
+/* Stile specifico per desktop */
+@media (min-width: 1024px) {
+    .novità-container {
+        padding-left: 22em; /* Applica padding-left solo su schermi grandi */
+        padding-top: 3em; /* Mantieni il padding-top per desktop */
+    }
+}
+
+/* Stile specifico per tablet */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .novità-container {
+        padding-left: 5em; /* Riduci il padding per schermi medi */
+        padding-top: 2em;  /* Riduci il padding-top per tablet */
+    }
+}
+
+/* Stile specifico per mobile */
+@media (max-width: 767px) {
+    .novità-container {
+        padding-left: 1em; /* Azzera il padding-left su schermi piccoli */
+        padding-top: 1em; /* Riduci il padding-top per dispositivi mobili */
+    }
+}
+
+  /* Header Novità */
+  .novità-header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Cards principali */
+  .novità-main {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .novità-card {
+    flex: 1;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .novità-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 10px;
+  }
+  
+  .novità-card h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .novità-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+  }
+  
+  /* Sezione "Nuovi episodi radio" */
+  .novità-subheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .novità-subheader h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .novità-subheader .link {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .novità-subheader .link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Cards episodi */
+  .novità-episodi {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+  }
+  
+  .episodio-card {
+    flex: 0 0 auto;
+    width: 150px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .episodio-image {
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .episodio-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .episodio-subtitle {
+    font-size: 12px;
+    color: #aaa;
+  }
+  
+  .novità-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .song-card {
+    text-align: center;
+    color: white;
+  }
+  
+  .song-image-placeholder {
+    width: 100%;
+    height: 120px;
+    background: #333;
+    border-radius: 8px;
+  }
+  
+  .explore-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .explore-button {
+    padding: 10px 20px;
+    background: #444;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    width: 100%;
+  }
+  

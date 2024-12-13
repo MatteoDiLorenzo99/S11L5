@@ -1,0 +1,92 @@
+.topnav-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 75%;
+    z-index: 1000;
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.topnav-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+}
+
+.left-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.control-icon {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.play-icon {
+    font-size: 24px;
+}
+
+.middle-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-image {
+    height: 30px;
+    filter: brightness(0) invert(1);
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.volume-control {
+    display: flex;
+    align-items: center;
+}
+
+.volume-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100px;
+    height: 4px;
+    background: #666;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.login-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-button:hover {
+    background-color: darkred;
+}
